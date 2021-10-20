@@ -1,0 +1,30 @@
+.integrantes{
+    display:grid;
+    grid-template-columns:100%;
+    .integrantes__integrante{
+        display: flex;
+        margin:10px;
+        .integrantes__integrante--descripcion{
+            display:flex;
+            flex-direction: column;
+            opacity:0;
+            h2{
+                text-align: left;
+            }
+        }
+        img{
+            margin:3px;
+            opacity: 10%;
+        }
+        &:hover{
+            img{
+            opacity: 100%;
+            transition: 1s; 
+            }
+            .integrantes__integrante--descripcion{
+            opacity: 100%;
+            transition: 1s;
+        }
+        }
+    }
+}

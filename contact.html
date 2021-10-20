@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AxP - Dejanos tu comentario</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="/img/logo.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="headGrid">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" width="100px">
+            </div>
+            <div id="titulo">
+                <h1>Instrumentación y control</h1>
+            </div>
+            <div class="navi"> 
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sensores.html">Sensores</a>
+                            <ul>
+                                <li><a href="sensores.html#lt">Sensor de nivel</a></li>
+                                <li><a href="sensores.html#pt">Sensor de presión</a></li>
+                                <li><a href="sensores.html#tt">Sensor de temperatura</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="actuadores.html">Actuadores</a></li>
+                        <li><a href="controladores.html">Controladores</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <form action="#">
+                    
+                        <legend>Datos de contacto</legend>
+                        <br>
+                        <div>
+                            <label for="Nombre">Escribe tu nombre</label>
+                            <input type="text" name="Nombre" placeholder="Nombre">
+                            <br>
+                            <br>
+                            <label for="Apellido">Escribe tu apellido</label>
+                            <input type="text" name="Apellido" placeholder="Apellido">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="check">¿Desea compartir sus comentarios al público?</label>
+                            <input type="checkbox" name="check">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" name="email" placeholder="example@email.com" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="pais">Nacionalidad</label>
+                            <select name="pais" id="">
+                                <option value="arg">Argentina</option>
+                                <option value="bra">Brasil</option>
+                                <option value="col">Colombia</option>
+                                <option value="per">Perú</option>
+                                <option value="oth">Otro</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="comentarios">Dejanos tu comentario aquí* </label>
+                            <textarea name="comentarios" id="" cols="30" rows="10" required placeholder="Escriba aquí..."></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Enviar datos">
+                            <input type="reset" value="Clean">
+                        </div>   
+    
+                    
+                </form>
+            </section>
+        </main>
+        <footer class="pie">
+            <div class="ctto">
+                <a id="correo" href="contact.html"><img src="img/correo.png" alt="Contactenos" width="50px" height="50px"></a>
+            </div>
+
+            <div class="redes">
+                <nav>
+                    <a id="facebook" href="http://www.facebook.com" target="_blank"><img src="img/logo_facebook.svg" alt="Facebook" width="50px" height="50px"></a>
+                    <a id="ig" href="http://www.instagram.com" target="_blank"><img src="img/iglogo.png" alt="Instagram" width="50px" height="50px"></a>
+                    <a id="tw" href="http://www.twitter.com" target="_blank"><img src="img/twitterlogo.svg" alt="Twitter" width="50px" height="50px"></a>
+                </nav>
+            </div>
+        </footer>      
+</body>
+</html>

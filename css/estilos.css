@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h4 {
+  font-size: 22px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+h6 {
+  font-size: 17px;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #1d2731;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1d2731;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+  background: linear-gradient(215deg, #70a2bd, #0b3c5d);
+  text-align: left;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+body .headGrid {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "logo titulo" "logo navi";
+}
+
+body .headGrid .logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+body .headGrid #titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: titulo;
+}
+
+body .headGrid .navi {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: navi;
+}
+
+body .headGrid .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 100px;
+}
+
+body .headGrid .menu li {
+  list-style: none;
+}
+
+body .headGrid .menu li:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-box-flex: 0.15;
+      -ms-flex-positive: 0.15;
+          flex-grow: 0.15;
+  -webkit-transform: translateZ(1px) scale(1.05);
+          transform: translateZ(1px) scale(1.05);
+}
+
+body .headGrid .menu li:hover > ul {
+  display: block;
+}
+
+body .headGrid .menu li a {
+  background-color: #0b3c5d;
+  color: #70a2bd;
+  text-decoration: none;
+  display: block;
+  border-color: #1d2731;
+  border-width: 1px;
+  border-radius: 5%;
+  border-style: solid;
+  padding: 10px 15px;
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+}
+
+body .headGrid .menu li a:hover {
+  background-color: #70a2bd;
+  border-color: #d9b310;
+  color: #1d2731;
+}
+
+body .headGrid .menu li ul {
+  display: none;
+  position: absolute;
+}
+
+body main .sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+body main .text h2 {
+  text-align: left;
+}
+
+body .pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .pie .ctto {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+body .pie .redes {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+body .pie .redes nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+body #tabcen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #tabcen .tabla {
+  border-style: none;
+  border-spacing: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #tabcen .tabla #titulosDeTabla {
+  color: #d9b310;
+  font-weight: bold;
+}
+
+body #tabcen .tabla th {
+  border: solid 1px #0b3c5d;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #70a2bd;
+}
+
+body #tabcen .tabla td {
+  border: solid 1px #0b3c5d;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #70a2bd;
+}
+
+body #tabcen .tabla legend {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+body .integrantes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+body .integrantes .integrantes__integrante {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+body .integrantes .integrantes__integrante .integrantes__integrante--descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+}
+
+body .integrantes .integrantes__integrante .integrantes__integrante--descripcion h2 {
+  text-align: left;
+}
+
+body .integrantes .integrantes__integrante img {
+  margin: 3px;
+  opacity: 10%;
+}
+
+body .integrantes .integrantes__integrante:hover img {
+  opacity: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .integrantes .integrantes__integrante:hover .integrantes__integrante--descripcion {
+  opacity: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 2.5%;
+  gap: 5px;
+  height: auto;
+  width: 95%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "val val val val 1 1 1" "val val val val var var var" "val val val val var var var" "val val val val var var var" "2 rec rec mot mot mot mot" "2 rec rec mot mot mot mot" "2 rec rec mot mot mot mot" "2 rec rec comp comp comp 3" "2 rec rec comp comp comp 3";
+}
+
+body .gridActuadores h3 {
+  color: #70a2bd;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  margin-top: -15px;
+}
+
+body .gridActuadores p {
+  display: block;
+  color: #1d2731;
+  text-align: justify;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  opacity: 0;
+}
+
+body .gridActuadores .valvulas {
+  background-color: #0b3c5d;
+  border-radius: 10px;
+  border: solid 2px black;
+  opacity: 0.5;
+}
+
+body .gridActuadores .valvulas h3 {
+  opacity: 1;
+}
+
+body .gridActuadores .valvulas:hover {
+  opacity: 1;
+  background-color: #70a2bd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .valvulas:hover h3 {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .valvulas:hover p {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .rectificadores {
+  background-color: #0b3c5d;
+  border-radius: 10px;
+  border: solid 2px black;
+  opacity: 0.5;
+}
+
+body .gridActuadores .rectificadores h3 {
+  opacity: 1;
+}
+
+body .gridActuadores .rectificadores:hover {
+  opacity: 1;
+  background-color: #70a2bd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .rectificadores:hover h3 {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .rectificadores:hover p {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .varDF {
+  background-color: #0b3c5d;
+  border-radius: 10px;
+  border: solid 2px black;
+  opacity: 0.5;
+}
+
+body .gridActuadores .varDF h3 {
+  opacity: 1;
+}
+
+body .gridActuadores .varDF:hover {
+  opacity: 1;
+  background-color: #70a2bd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .varDF:hover h3 {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .varDF:hover p {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .motElec {
+  background-color: #0b3c5d;
+  border-radius: 10px;
+  border: solid 2px black;
+  opacity: 0.5;
+}
+
+body .gridActuadores .motElec h3 {
+  opacity: 1;
+}
+
+body .gridActuadores .motElec:hover {
+  opacity: 1;
+  background-color: #70a2bd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .motElec:hover h3 {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .motElec:hover p {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .compuertas {
+  background-color: #0b3c5d;
+  border-radius: 10px;
+  border: solid 2px black;
+  opacity: 0.5;
+}
+
+body .gridActuadores .compuertas h3 {
+  opacity: 1;
+}
+
+body .gridActuadores .compuertas:hover {
+  opacity: 1;
+  background-color: #70a2bd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .compuertas:hover h3 {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .compuertas:hover p {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .gridActuadores .valvulas {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: val;
+  height: auto;
+  width: 75%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body .gridActuadores .rectificadores {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: rec;
+  height: 75%;
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+body .gridActuadores .varDF {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: var;
+}
+
+body .gridActuadores .motElec {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-area: mot;
+}
+
+body .gridActuadores .compuertas {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: comp;
+}
+
+@media only screen and (max-width: 768px) {
+  body .headGrid .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 0px;
+  }
+  body .headGrid .menu li:hover {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  body .headGrid .menu li a {
+    display: block;
+    border-color: #1d2731;
+    border-width: 1px;
+    border-radius: 5%;
+    border-style: solid;
+    padding: 10px 15px;
+    -webkit-box-shadow: inset;
+            box-shadow: inset;
+    font-size: 15px;
+  }
+  body main .sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    justify-items: center;
+  }
+  body section div {
+    text-align: center;
+  }
+  body iframe {
+    width: 740px;
+    height: 360px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  body .vid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  body .headGrid {
+    width: 100%;
+    height: 135px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "logo titulo" "navi navi";
+  }
+  body .headGrid h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  body .headGrid .navi {
+    height: 30px;
+  }
+  body .headGrid .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px;
+    padding: 0;
+  }
+  body .headGrid .menu li:hover {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  body .headGrid .menu li a {
+    display: block;
+    border-color: #1d2731;
+    border-width: 1px;
+    border-radius: 5%;
+    border-style: solid;
+    padding: 7px 8px;
+    -webkit-box-shadow: inset;
+            box-shadow: inset;
+    font-size: 12px;
+  }
+  body main .sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    justify-items: center;
+  }
+  body iframe {
+    width: 320px;
+    height: 180px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  body .vid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  body section img {
+    width: 125px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    opacity: 1;
+  }
+  body section div {
+    text-align: center;
+  }
+  body .integrantes .integrantes__integrante {
+    display: unset;
+    opacity: 1;
+  }
+  body .integrantes .integrantes__integrante img {
+    opacity: 1;
+    float: left;
+    padding-right: 7px;
+  }
+  body .integrantes .integrantes__integrante .integrantes__integrante--descripcion {
+    opacity: 1;
+    display: unset;
+    text-align: start;
+  }
+  body .integrantes .integrantes__integrante .integrantes__integrante--descripcion h2 {
+    font-size: 20px;
+  }
+  body .gridActuadores {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .gridActuadores h3 {
+    color: #70a2bd;
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+  }
+  body .gridActuadores p {
+    display: block;
+    color: #1d2731;
+    text-align: justify;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    opacity: 0;
+  }
+  body .gridActuadores .valvulas {
+    height: auto;
+    width: auto;
+  }
+  body .gridActuadores .rectificadores {
+    height: auto;
+    width: auto;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

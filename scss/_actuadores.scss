@@ -1,0 +1,88 @@
+@mixin sizes($width,$height){
+    height: $height;
+    width: $width;
+}
+.gridActuadores{
+    display:grid;
+    margin-left:2.5%;
+    gap:5px;
+    @include sizes(95%,auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "val val val val 1 1 1"
+    "val val val val var var var"
+    "val val val val var var var"
+    "val val val val var var var"
+    "2 rec rec mot mot mot mot"
+    "2 rec rec mot mot mot mot"
+    "2 rec rec mot mot mot mot"
+    "2 rec rec comp comp comp 3"
+    "2 rec rec comp comp comp 3"
+    ;
+    
+    h3{
+        color:$Csec;
+        position: relative;
+        text-align: center;
+        top:50%;
+        margin-top:-15px;
+    }
+    p{
+        display:block;
+        color:$Cter;
+        text-align: justify;
+        align-items: center;
+        margin: 10px;
+        opacity: 0;
+    }
+
+    @each $act in valvulas,rectificadores,varDF,motElec,compuertas {
+        .#{$act} {
+            background-color: $Cppal;
+            border-radius: 10px;
+            border:solid 2px black;
+            opacity: 0.5;
+            h3{
+                opacity: 1;
+            }
+            &:hover{
+                opacity:1;
+                h3{
+                    opacity: 0;
+                    transition: 1s;
+                }
+                p{
+                    opacity: 1;
+                    transition: 1s;
+                }
+                background-color: $Csec;
+                transition:1s;
+    
+            }
+
+    }
+    }
+    .valvulas{
+        grid-area:val;
+        @include sizes(75%,auto);
+        justify-self: center;
+       
+
+    }
+    .rectificadores{
+        grid-area:rec;
+        @include sizes(90%,75%);
+        align-self:center;
+        justify-self: end;        
+    }
+    .varDF{
+        grid-area:var;        
+    }
+    .motElec{
+        grid-area:mot;        
+    }
+    .compuertas{
+        grid-area:comp;
+    }
+}

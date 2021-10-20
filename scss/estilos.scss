@@ -1,0 +1,66 @@
+$Cppal:#0b3c5d;
+$Csec:#70a2bd;
+$Cter:#1d2731;
+$Cadc:#d9b310;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: justify;
+}
+
+
+h1{
+    font-size: 35px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+h4{
+    font-size: 22px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+h5{
+    font-size: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+h6{
+    font-size: 17px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+p{
+    font-size: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color:$Cter;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: $Cter;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    gap:3px;
+    background:linear-gradient(215deg,$Csec,$Cppal);
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 2px;
+    @import "header";
+    @import "ppal";
+    @import "footer";
+    @import "tablas";
+    @import "integrantes";
+    @import "actuadores";
+    @import "mediaq";
+}

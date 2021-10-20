@@ -1,0 +1,58 @@
+.headGrid{
+    width:100%;
+    height: auto;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "logo titulo"
+    "logo navi"
+    ;
+    .logo{
+        grid-area:logo;
+    }
+    #titulo{
+        grid-area:titulo;
+    }
+    .navi{
+        grid-area:navi;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+        margin-right:100px;
+        li{
+        list-style: none;
+        &:hover{
+            transition: 0.7s;
+            flex-grow:0.15;
+            transform: translateZ(1px) scale(1.05);
+        }
+        &:hover > ul{
+            display:block;
+        }
+        a{
+            background-color:$Cppal;
+            color:$Csec;
+            text-decoration:none;
+            display:block;
+            border-color: $Cter;
+            border-width: 1px;
+            border-radius: 5%;
+            border-style: solid;
+            padding: 10px 15px;
+            box-shadow:inset;
+            &:hover{
+                background-color: $Csec;
+                border-color:$Cadc;
+                color:$Cter;
+            }    
+        }
+        ul{
+            display: none;
+            position:absolute;
+        
+        }
+        }
+    }
+}

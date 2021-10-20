@@ -1,0 +1,14 @@
+.pie{
+    display: flex;
+    flex-direction: row;
+    .ctto{
+        flex-basis: 50%;
+    }
+    .redes{
+        flex-basis: 50%;
+        nav{
+            display: flex;
+            justify-content: right; 
+        }
+    }
+}

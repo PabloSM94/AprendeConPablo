@@ -1,0 +1,12 @@
+main{
+    .sec{
+        display:flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    .text{
+        h2{
+        text-align: left;
+    }
+    }
+}
