@@ -64,7 +64,7 @@ body {
   margin-right: 2px;
 }
 
-body .headGrid {
+.headGrid {
   width: 100%;
   height: auto;
   display: -ms-grid;
@@ -76,26 +76,26 @@ body .headGrid {
       grid-template-areas: "logo titulo" "logo navi";
 }
 
-body .headGrid .logo {
+.headGrid .logo {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: logo;
 }
 
-body .headGrid #titulo {
+.headGrid #titulo {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: titulo;
 }
 
-body .headGrid .navi {
+.headGrid .navi {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: navi;
 }
 
-body .headGrid .menu {
+.headGrid .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,11 +105,11 @@ body .headGrid .menu {
   margin-right: 100px;
 }
 
-body .headGrid .menu li {
+.headGrid .menu li {
   list-style: none;
 }
 
-body .headGrid .menu li:hover {
+.headGrid .menu li:hover {
   -webkit-transition: 0.7s;
   transition: 0.7s;
   -webkit-box-flex: 0.15;
@@ -119,11 +119,11 @@ body .headGrid .menu li:hover {
           transform: translateZ(1px) scale(1.05);
 }
 
-body .headGrid .menu li:hover > ul {
+.headGrid .menu li:hover > ul {
   display: block;
 }
 
-body .headGrid .menu li a {
+.headGrid .menu li a {
   background-color: #0b3c5d;
   color: #70a2bd;
   text-decoration: none;
@@ -137,18 +137,18 @@ body .headGrid .menu li a {
           box-shadow: inset;
 }
 
-body .headGrid .menu li a:hover {
+.headGrid .menu li a:hover {
   background-color: #70a2bd;
   border-color: #d9b310;
   color: #1d2731;
 }
 
-body .headGrid .menu li ul {
+.headGrid .menu li ul {
   display: none;
   position: absolute;
 }
 
-body main .sec {
+main .sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,11 +159,11 @@ body main .sec {
   gap: 10px;
 }
 
-body main .text h2 {
+main .text h2 {
   text-align: left;
 }
 
-body .pie {
+.pie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,17 +173,17 @@ body .pie {
           flex-direction: row;
 }
 
-body .pie .ctto {
+.pie .ctto {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 
-body .pie .redes {
+.pie .redes {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 
-body .pie .redes nav {
+.pie .redes nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +192,7 @@ body .pie .redes nav {
           justify-content: right;
 }
 
-body #tabcen {
+#tabcen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +203,7 @@ body #tabcen {
           justify-content: center;
 }
 
-body #tabcen .tabla {
+#tabcen .tabla {
   border-style: none;
   border-spacing: 0;
   -webkit-box-pack: center;
@@ -211,12 +211,12 @@ body #tabcen .tabla {
           justify-content: center;
 }
 
-body #tabcen .tabla #titulosDeTabla {
+#tabcen .tabla #titulosDeTabla {
   color: #d9b310;
   font-weight: bold;
 }
 
-body #tabcen .tabla th {
+#tabcen .tabla th {
   border: solid 1px #0b3c5d;
   border-radius: 5px;
   padding: 10px 15px;
@@ -224,7 +224,7 @@ body #tabcen .tabla th {
   background-color: #70a2bd;
 }
 
-body #tabcen .tabla td {
+#tabcen .tabla td {
   border: solid 1px #0b3c5d;
   border-radius: 5px;
   padding: 10px 15px;
@@ -232,26 +232,26 @@ body #tabcen .tabla td {
   background-color: #70a2bd;
 }
 
-body #tabcen .tabla legend {
+#tabcen .tabla legend {
   font-weight: bold;
   font-size: xx-large;
 }
 
-body .integrantes {
+.integrantes {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
 }
 
-body .integrantes .integrantes__integrante {
+.integrantes .integrantes__integrante {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 10px;
 }
 
-body .integrantes .integrantes__integrante .integrantes__integrante--descripcion {
+.integrantes .integrantes__integrante .integrantes__integrante--descripcion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,28 +262,28 @@ body .integrantes .integrantes__integrante .integrantes__integrante--descripcion
   opacity: 0;
 }
 
-body .integrantes .integrantes__integrante .integrantes__integrante--descripcion h2 {
+.integrantes .integrantes__integrante .integrantes__integrante--descripcion h2 {
   text-align: left;
 }
 
-body .integrantes .integrantes__integrante img {
+.integrantes .integrantes__integrante img {
   margin: 3px;
   opacity: 10%;
 }
 
-body .integrantes .integrantes__integrante:hover img {
+.integrantes .integrantes__integrante:hover img {
   opacity: 100%;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .integrantes .integrantes__integrante:hover .integrantes__integrante--descripcion {
+.integrantes .integrantes__integrante:hover .integrantes__integrante--descripcion {
   opacity: 100%;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores {
+.gridActuadores {
   display: -ms-grid;
   display: grid;
   margin-left: 2.5%;
@@ -297,7 +297,7 @@ body .gridActuadores {
       grid-template-areas: "val val val val 1 1 1" "val val val val var var var" "val val val val var var var" "val val val val var var var" "2 rec rec mot mot mot mot" "2 rec rec mot mot mot mot" "2 rec rec mot mot mot mot" "2 rec rec comp comp comp 3" "2 rec rec comp comp comp 3";
 }
 
-body .gridActuadores h3 {
+.gridActuadores h3 {
   color: #70a2bd;
   position: relative;
   text-align: center;
@@ -305,7 +305,7 @@ body .gridActuadores h3 {
   margin-top: -15px;
 }
 
-body .gridActuadores p {
+.gridActuadores p {
   display: block;
   color: #1d2731;
   text-align: justify;
@@ -316,157 +316,157 @@ body .gridActuadores p {
   opacity: 0;
 }
 
-body .gridActuadores .valvulas {
+.gridActuadores .valvulas {
   background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
   opacity: 0.5;
 }
 
-body .gridActuadores .valvulas h3 {
+.gridActuadores .valvulas h3 {
   opacity: 1;
 }
 
-body .gridActuadores .valvulas:hover {
+.gridActuadores .valvulas:hover {
   opacity: 1;
   background-color: #70a2bd;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .valvulas:hover h3 {
+.gridActuadores .valvulas:hover h3 {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .valvulas:hover p {
+.gridActuadores .valvulas:hover p {
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .rectificadores {
+.gridActuadores .rectificadores {
   background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
   opacity: 0.5;
 }
 
-body .gridActuadores .rectificadores h3 {
+.gridActuadores .rectificadores h3 {
   opacity: 1;
 }
 
-body .gridActuadores .rectificadores:hover {
+.gridActuadores .rectificadores:hover {
   opacity: 1;
   background-color: #70a2bd;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .rectificadores:hover h3 {
+.gridActuadores .rectificadores:hover h3 {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .rectificadores:hover p {
+.gridActuadores .rectificadores:hover p {
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .varDF {
+.gridActuadores .varDF {
   background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
   opacity: 0.5;
 }
 
-body .gridActuadores .varDF h3 {
+.gridActuadores .varDF h3 {
   opacity: 1;
 }
 
-body .gridActuadores .varDF:hover {
+.gridActuadores .varDF:hover {
   opacity: 1;
   background-color: #70a2bd;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .varDF:hover h3 {
+.gridActuadores .varDF:hover h3 {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .varDF:hover p {
+.gridActuadores .varDF:hover p {
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .motElec {
+.gridActuadores .motElec {
   background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
   opacity: 0.5;
 }
 
-body .gridActuadores .motElec h3 {
+.gridActuadores .motElec h3 {
   opacity: 1;
 }
 
-body .gridActuadores .motElec:hover {
+.gridActuadores .motElec:hover {
   opacity: 1;
   background-color: #70a2bd;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .motElec:hover h3 {
+.gridActuadores .motElec:hover h3 {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .motElec:hover p {
+.gridActuadores .motElec:hover p {
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .compuertas {
+.gridActuadores .compuertas {
   background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
   opacity: 0.5;
 }
 
-body .gridActuadores .compuertas h3 {
+.gridActuadores .compuertas h3 {
   opacity: 1;
 }
 
-body .gridActuadores .compuertas:hover {
+.gridActuadores .compuertas:hover {
   opacity: 1;
   background-color: #70a2bd;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .compuertas:hover h3 {
+.gridActuadores .compuertas:hover h3 {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .compuertas:hover p {
+.gridActuadores .compuertas:hover p {
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-body .gridActuadores .valvulas {
+.gridActuadores .valvulas {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   -ms-grid-column: 1;
@@ -478,7 +478,7 @@ body .gridActuadores .valvulas {
       justify-self: center;
 }
 
-body .gridActuadores .rectificadores {
+.gridActuadores .rectificadores {
   -ms-grid-row: 5;
   -ms-grid-row-span: 5;
   -ms-grid-column: 2;
@@ -493,7 +493,7 @@ body .gridActuadores .rectificadores {
       justify-self: end;
 }
 
-body .gridActuadores .varDF {
+.gridActuadores .varDF {
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   -ms-grid-column: 5;
@@ -501,7 +501,7 @@ body .gridActuadores .varDF {
   grid-area: var;
 }
 
-body .gridActuadores .motElec {
+.gridActuadores .motElec {
   -ms-grid-row: 5;
   -ms-grid-row-span: 3;
   -ms-grid-column: 4;
@@ -509,7 +509,7 @@ body .gridActuadores .motElec {
   grid-area: mot;
 }
 
-body .gridActuadores .compuertas {
+.gridActuadores .compuertas {
   -ms-grid-row: 8;
   -ms-grid-row-span: 2;
   -ms-grid-column: 4;
@@ -518,7 +518,7 @@ body .gridActuadores .compuertas {
 }
 
 @media only screen and (max-width: 768px) {
-  body .headGrid .menu {
+  .headGrid .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -529,7 +529,7 @@ body .gridActuadores .compuertas {
         flex-wrap: wrap;
     margin-right: 0px;
   }
-  body .headGrid .menu li:hover {
+  .headGrid .menu li:hover {
     -webkit-transition: 0.7s;
     transition: 0.7s;
     -webkit-box-flex: 0;
@@ -538,7 +538,7 @@ body .gridActuadores .compuertas {
     -webkit-transform: none;
             transform: none;
   }
-  body .headGrid .menu li a {
+  .headGrid .menu li a {
     display: block;
     border-color: #1d2731;
     border-width: 1px;
@@ -549,7 +549,7 @@ body .gridActuadores .compuertas {
             box-shadow: inset;
     font-size: 15px;
   }
-  body main .sec {
+  main .sec {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -560,10 +560,10 @@ body .gridActuadores .compuertas {
     gap: 10px;
     justify-items: center;
   }
-  body section div {
+  section div {
     text-align: center;
   }
-  body iframe {
+  iframe {
     width: 740px;
     height: 360px;
     -webkit-box-pack: center;
@@ -572,7 +572,7 @@ body .gridActuadores .compuertas {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  body .vid {
+  .vid {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -581,7 +581,7 @@ body .gridActuadores .compuertas {
 }
 
 @media only screen and (max-width: 380px) {
-  body .headGrid {
+  .headGrid {
     width: 100%;
     height: 135px;
     display: -ms-grid;
@@ -592,14 +592,14 @@ body .gridActuadores .compuertas {
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "logo titulo" "navi navi";
   }
-  body .headGrid h1 {
+  .headGrid h1 {
     text-align: center;
     margin-top: 10px;
   }
-  body .headGrid .navi {
+  .headGrid .navi {
     height: 30px;
   }
-  body .headGrid .menu {
+  .headGrid .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -611,7 +611,7 @@ body .gridActuadores .compuertas {
     margin: 0px;
     padding: 0;
   }
-  body .headGrid .menu li:hover {
+  .headGrid .menu li:hover {
     -webkit-transition: 0.7s;
     transition: 0.7s;
     -webkit-box-flex: 0;
@@ -620,7 +620,7 @@ body .gridActuadores .compuertas {
     -webkit-transform: none;
             transform: none;
   }
-  body .headGrid .menu li a {
+  .headGrid .menu li a {
     display: block;
     border-color: #1d2731;
     border-width: 1px;
@@ -631,7 +631,7 @@ body .gridActuadores .compuertas {
             box-shadow: inset;
     font-size: 12px;
   }
-  body main .sec {
+  main .sec {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -642,7 +642,7 @@ body .gridActuadores .compuertas {
     gap: 10px;
     justify-items: center;
   }
-  body iframe {
+  iframe {
     width: 320px;
     height: 180px;
     -webkit-box-pack: center;
@@ -651,40 +651,40 @@ body .gridActuadores .compuertas {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  body .vid {
+  .vid {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
   }
-  body section img {
+  section img {
     width: 125px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     opacity: 1;
   }
-  body section div {
+  section div {
     text-align: center;
   }
-  body .integrantes .integrantes__integrante {
+  .integrantes .integrantes__integrante {
     display: unset;
     opacity: 1;
   }
-  body .integrantes .integrantes__integrante img {
+  .integrantes .integrantes__integrante img {
     opacity: 1;
     float: left;
     padding-right: 7px;
   }
-  body .integrantes .integrantes__integrante .integrantes__integrante--descripcion {
+  .integrantes .integrantes__integrante .integrantes__integrante--descripcion {
     opacity: 1;
     display: unset;
     text-align: start;
   }
-  body .integrantes .integrantes__integrante .integrantes__integrante--descripcion h2 {
+  .integrantes .integrantes__integrante .integrantes__integrante--descripcion h2 {
     font-size: 20px;
   }
-  body .gridActuadores {
+  .gridActuadores {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -693,13 +693,13 @@ body .gridActuadores .compuertas {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body .gridActuadores h3 {
+  .gridActuadores h3 {
     color: #70a2bd;
     position: relative;
     text-align: center;
     margin-top: 0px;
   }
-  body .gridActuadores p {
+  .gridActuadores p {
     display: block;
     color: #1d2731;
     text-align: justify;
@@ -710,11 +710,11 @@ body .gridActuadores .compuertas {
     margin-bottom: 30px;
     opacity: 0;
   }
-  body .gridActuadores .valvulas {
+  .gridActuadores .valvulas {
     height: auto;
     width: auto;
   }
-  body .gridActuadores .rectificadores {
+  .gridActuadores .rectificadores {
     height: auto;
     width: auto;
   }
