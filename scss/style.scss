@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    header{
+        h1{
+            font-weight:bold;
+            line-height: normal;
+            font-family: 'Roboto', Arial, sans-serif;
+            text-align: justify;
+            font-size: 35px;
+        }        
+    }
+    h2{
+        font-weight:bold;
+        line-height: normal;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 30px;
+    }
+    .carousel-caption {
+        position: absolute; 
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        h5{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
+    }
+}

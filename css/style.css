@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header h1 {
+  font-weight: bold;
+  line-height: normal;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: justify;
+  font-size: 35px;
+}
+
+body h2 {
+  font-weight: bold;
+  line-height: normal;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 30px;
+}
+
+body .carousel-caption {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body .carousel-caption h5 {
+  color: #fff;
+}
+
+body .carousel-caption p {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
