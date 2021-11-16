@@ -401,7 +401,7 @@ main .text h2 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-area: comp;
-  background-image: url("img/compuertas.jpg");
+  background-image: url("img/compuertas.JPG");
 }
 
 @media only screen and (max-width: 768px) {
