@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 1px;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,49 +7,8 @@
   text-align: justify;
 }
 
-h1 {
-  font-size: 35px;
-  font-family: 'Roboto', Arial, sans-serif;
-}
-
-h2 {
-  font-size: 30px;
-  font-family: 'Roboto', Arial, sans-serif;
-  text-align: center;
-}
-
-h3 {
-  font-size: 25px;
-  font-family: 'Roboto', Arial, sans-serif;
-}
-
-h4 {
-  font-size: 22px;
-  font-family: 'Roboto', Arial, sans-serif;
-}
-
-h5 {
-  font-size: 20px;
-  font-family: 'Roboto', Arial, sans-serif;
-}
-
-h6 {
-  font-size: 17px;
-  font-family: 'Roboto', Arial, sans-serif;
-}
-
-p {
-  font-size: 15px;
-  font-family: 'Roboto', Arial, sans-serif;
-  color: #1d2731;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #1d2731;
-  font-family: 'Roboto', Arial, sans-serif;
-}
-
 body {
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,92 +17,23 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3px;
-  background: linear-gradient(215deg, #70a2bd, #0b3c5d);
   text-align: left;
 }
 
-.headGrid {
-  width: 100%;
-  height: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "logo titulo" "logo navi";
+body h2 {
+  text-align: center;
 }
 
-.headGrid .logo {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: logo;
+body p {
+  margin-right: 1rem;
 }
 
-.headGrid #titulo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: titulo;
+body iframe {
+  text-align: center;
 }
 
-.headGrid .navi {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: navi;
-}
-
-.headGrid .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 100px;
-}
-
-.headGrid .menu li {
-  list-style: none;
-}
-
-.headGrid .menu li:hover {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  -webkit-box-flex: 0.15;
-      -ms-flex-positive: 0.15;
-          flex-grow: 0.15;
-  -webkit-transform: translateZ(1px) scale(1.05);
-          transform: translateZ(1px) scale(1.05);
-}
-
-.headGrid .menu li:hover > ul {
-  display: block;
-}
-
-.headGrid .menu li a {
-  background-color: #0b3c5d;
-  color: #70a2bd;
-  text-decoration: none;
-  display: block;
-  border-color: #1d2731;
-  border-width: 1px;
-  border-radius: 5%;
-  border-style: solid;
-  padding: 10px 15px;
-  -webkit-box-shadow: inset;
-          box-shadow: inset;
-}
-
-.headGrid .menu li a:hover {
-  background-color: #70a2bd;
-  border-color: #d9b310;
-  color: #1d2731;
-}
-
-.headGrid .menu li ul {
-  display: none;
-  position: absolute;
+body .headGrid {
+  height: 79.75px;
 }
 
 main .sec {
@@ -176,6 +66,16 @@ main .text h2 {
       flex-basis: 50%;
 }
 
+.pie .ctto img {
+  background-color: white;
+  border-radius: 30px;
+}
+
+.pie .ctto a {
+  text-decoration: none;
+  color: white;
+}
+
 .pie .redes {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -190,49 +90,14 @@ main .text h2 {
           justify-content: right;
 }
 
-#tabcen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.pie .redes nav div {
+  opacity: 0.7;
 }
 
-#tabcen .tabla {
-  border-style: none;
-  border-spacing: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#tabcen .tabla #titulosDeTabla {
-  color: #d9b310;
-  font-weight: bold;
-}
-
-#tabcen .tabla th {
-  border: solid 1px #0b3c5d;
-  border-radius: 5px;
-  padding: 10px 15px;
-  text-align: center;
-  background-color: #70a2bd;
-}
-
-#tabcen .tabla td {
-  border: solid 1px #0b3c5d;
-  border-radius: 5px;
-  padding: 10px 15px;
-  text-align: center;
-  background-color: #70a2bd;
-}
-
-#tabcen .tabla legend {
-  font-weight: bold;
-  font-size: xx-large;
+.pie .redes nav div:hover {
+  opacity: 1;
+  -webkit-transform: translateY(-10px) scale(1.1);
+          transform: translateY(-10px) scale(1.1);
 }
 
 .integrantes {
@@ -292,11 +157,20 @@ main .text h2 {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "val val val val 1 1 1" "val val val val var var var" "val val val val var var var" "val val val val var var var" "2 rec rec mot mot mot mot" "2 rec rec mot mot mot mot" "2 rec rec mot mot mot mot" "2 rec rec comp comp comp 3" "2 rec rec comp comp comp 3";
+      grid-template-areas: "val val val val 1 1 1"
+ "val val val val var var var"
+ "val val val val var var var"
+ "val val val val var var var"
+ "2 rec rec mot mot mot mot"
+ "2 rec rec mot mot mot mot"
+ "2 rec rec mot mot mot mot"
+ "2 rec rec comp comp comp 3"
+ "2 rec rec comp comp comp 3";
 }
 
 .gridActuadores h3 {
-  color: #70a2bd;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.568);
   position: relative;
   text-align: center;
   top: 50%;
@@ -305,7 +179,7 @@ main .text h2 {
 
 .gridActuadores p {
   display: block;
-  color: #1d2731;
+  color: black;
   text-align: justify;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -315,10 +189,9 @@ main .text h2 {
 }
 
 .gridActuadores .valvulas {
-  background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .gridActuadores .valvulas h3 {
@@ -327,15 +200,18 @@ main .text h2 {
 
 .gridActuadores .valvulas:hover {
   opacity: 1;
-  background-color: #70a2bd;
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-image: none;
+  background-color: whitesmoke;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .gridActuadores .valvulas:hover h3 {
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .gridActuadores .valvulas:hover p {
@@ -345,10 +221,9 @@ main .text h2 {
 }
 
 .gridActuadores .rectificadores {
-  background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .gridActuadores .rectificadores h3 {
@@ -357,15 +232,18 @@ main .text h2 {
 
 .gridActuadores .rectificadores:hover {
   opacity: 1;
-  background-color: #70a2bd;
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-image: none;
+  background-color: whitesmoke;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .gridActuadores .rectificadores:hover h3 {
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .gridActuadores .rectificadores:hover p {
@@ -375,10 +253,9 @@ main .text h2 {
 }
 
 .gridActuadores .varDF {
-  background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .gridActuadores .varDF h3 {
@@ -387,15 +264,18 @@ main .text h2 {
 
 .gridActuadores .varDF:hover {
   opacity: 1;
-  background-color: #70a2bd;
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-image: none;
+  background-color: whitesmoke;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .gridActuadores .varDF:hover h3 {
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .gridActuadores .varDF:hover p {
@@ -405,10 +285,9 @@ main .text h2 {
 }
 
 .gridActuadores .motElec {
-  background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .gridActuadores .motElec h3 {
@@ -417,15 +296,18 @@ main .text h2 {
 
 .gridActuadores .motElec:hover {
   opacity: 1;
-  background-color: #70a2bd;
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-image: none;
+  background-color: whitesmoke;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .gridActuadores .motElec:hover h3 {
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .gridActuadores .motElec:hover p {
@@ -435,10 +317,9 @@ main .text h2 {
 }
 
 .gridActuadores .compuertas {
-  background-color: #0b3c5d;
   border-radius: 10px;
   border: solid 2px black;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .gridActuadores .compuertas h3 {
@@ -447,15 +328,18 @@ main .text h2 {
 
 .gridActuadores .compuertas:hover {
   opacity: 1;
-  background-color: #70a2bd;
-  -webkit-transition: 1s;
-  transition: 1s;
+  background-image: none;
+  background-color: whitesmoke;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .gridActuadores .compuertas:hover h3 {
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .gridActuadores .compuertas:hover p {
@@ -474,6 +358,7 @@ main .text h2 {
   width: 75%;
   -ms-grid-column-align: center;
       justify-self: center;
+  background-image: url("img/valvula.jpeg");
 }
 
 .gridActuadores .rectificadores {
@@ -489,6 +374,7 @@ main .text h2 {
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
+  background-image: url("img/rectificadores.jpg");
 }
 
 .gridActuadores .varDF {
@@ -497,6 +383,7 @@ main .text h2 {
   -ms-grid-column: 5;
   -ms-grid-column-span: 3;
   grid-area: var;
+  background-image: url("img/varDF.jpg");
 }
 
 .gridActuadores .motElec {
@@ -505,6 +392,7 @@ main .text h2 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 4;
   grid-area: mot;
+  background-image: url("img/motElec.jpg");
 }
 
 .gridActuadores .compuertas {
@@ -513,40 +401,10 @@ main .text h2 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-area: comp;
+  background-image: url("img/compuertas.jpg");
 }
 
 @media only screen and (max-width: 768px) {
-  .headGrid .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: 0px;
-  }
-  .headGrid .menu li:hover {
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -webkit-transform: none;
-            transform: none;
-  }
-  .headGrid .menu li a {
-    display: block;
-    border-color: #1d2731;
-    border-width: 1px;
-    border-radius: 5%;
-    border-style: solid;
-    padding: 10px 15px;
-    -webkit-box-shadow: inset;
-            box-shadow: inset;
-    font-size: 15px;
-  }
   main .sec {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -579,56 +437,6 @@ main .text h2 {
 }
 
 @media only screen and (max-width: 600px) {
-  .headGrid {
-    width: 100%;
-    height: 135px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "logo titulo" "navi navi";
-  }
-  .headGrid h1 {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .headGrid .navi {
-    height: 30px;
-  }
-  .headGrid .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 0px;
-    padding: 0;
-  }
-  .headGrid .menu li:hover {
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -webkit-transform: none;
-            transform: none;
-  }
-  .headGrid .menu li a {
-    display: block;
-    border-color: #1d2731;
-    border-width: 1px;
-    border-radius: 5%;
-    border-style: solid;
-    padding: 7px 8px;
-    -webkit-box-shadow: inset;
-            box-shadow: inset;
-    font-size: 12px;
-  }
   main .sec {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -692,10 +500,12 @@ main .text h2 {
             flex-direction: column;
   }
   .gridActuadores h3 {
-    color: #70a2bd;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.568);
     position: relative;
     text-align: center;
-    margin-top: 0px;
+    top: 50%;
+    margin-top: 0;
   }
   .gridActuadores p {
     display: block;
@@ -708,6 +518,25 @@ main .text h2 {
     margin-bottom: 30px;
     opacity: 0;
   }
+  .gridActuadores .valvulas:hover {
+    opacity: 1;
+    background-image: none;
+    background-color: whitesmoke;
+    -webkit-transition: 2s;
+    transition: 2s;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .gridActuadores .valvulas:hover h3 {
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .gridActuadores .valvulas:hover p {
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
   .gridActuadores .valvulas {
     height: auto;
     width: auto;
@@ -716,8 +545,137 @@ main .text h2 {
     height: auto;
     width: auto;
   }
-  .carousel-item img {
+  .gridActuadores .rectificadores:hover {
+    opacity: 1;
+    background-image: none;
+    background-color: whitesmoke;
+    -webkit-transition: 2s;
+    transition: 2s;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .gridActuadores .rectificadores:hover h3 {
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .gridActuadores .rectificadores:hover p {
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .gridActuadores .valvulas {
     height: auto;
+    width: auto;
+  }
+  .gridActuadores .rectificadores {
+    height: auto;
+    width: auto;
+  }
+  .gridActuadores .varDF:hover {
+    opacity: 1;
+    background-image: none;
+    background-color: whitesmoke;
+    -webkit-transition: 2s;
+    transition: 2s;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .gridActuadores .varDF:hover h3 {
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .gridActuadores .varDF:hover p {
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .gridActuadores .valvulas {
+    height: auto;
+    width: auto;
+  }
+  .gridActuadores .rectificadores {
+    height: auto;
+    width: auto;
+  }
+  .gridActuadores .motElec:hover {
+    opacity: 1;
+    background-image: none;
+    background-color: whitesmoke;
+    -webkit-transition: 2s;
+    transition: 2s;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .gridActuadores .motElec:hover h3 {
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .gridActuadores .motElec:hover p {
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .gridActuadores .valvulas {
+    height: auto;
+    width: auto;
+  }
+  .gridActuadores .rectificadores {
+    height: auto;
+    width: auto;
+  }
+  .gridActuadores .compuertas:hover {
+    opacity: 1;
+    background-image: none;
+    background-color: whitesmoke;
+    -webkit-transition: 2s;
+    transition: 2s;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .gridActuadores .compuertas:hover h3 {
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .gridActuadores .compuertas:hover p {
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .gridActuadores .valvulas {
+    height: auto;
+    width: auto;
+  }
+  .gridActuadores .rectificadores {
+    height: auto;
+    width: auto;
+  }
+  .carrusel {
+    display: none;
+  }
+  .pie .redes {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .pie .redes nav {
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .pie .redes nav div {
+    opacity: 1;
+  }
+  .pie .redes nav div:hover {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

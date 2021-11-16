@@ -4,7 +4,7 @@ $Cter:#1d2731;
 $Cadc:#d9b310;
 
 *{
-    margin:0;
+    margin:1px;
     padding:0;
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;
@@ -12,55 +12,29 @@ $Cadc:#d9b310;
 }
 
 
-h1{
-    font-size: 35px;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-h2{
-    font-size: 30px;
-    font-family: 'Roboto', Arial, sans-serif;
-    text-align: center;
-}
-h3{
-    font-size: 25px;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-h4{
-    font-size: 22px;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-h5{
-    font-size: 20px;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-h6{
-    font-size: 17px;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-p{
-    font-size: 15px;
-    font-family: 'Roboto', Arial, sans-serif;
-    color:$Cter;
-}
-
-h1,h2,h3,h4,h5,h6{
-    color: $Cter;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-
 body{
+    color: white;
     display:flex;
     flex-direction: column;
     gap:3px;
-    background:linear-gradient(215deg,$Csec,$Cppal);
     text-align: left;
-
-    
+    h2{
+        text-align: center;
+    }
+    p{
+        margin-right: 1rem;
+    }
+    iframe{
+        text-align: center;
+    }
+    .headGrid{
+        height: 79.75px;
+    }
 }
-@import "header";
+
+
 @import "ppal";
 @import "footer";
-@import "tablas";
 @import "integrantes";
 @import "actuadores";
 @import "mediaq";

@@ -22,7 +22,8 @@
     ;
     
     h3{
-        color:$Csec;
+        color:black;
+        background-color: rgba(255, 255, 255, 0.568);
         position: relative;
         text-align: center;
         top:50%;
@@ -30,7 +31,7 @@
     }
     p{
         display:block;
-        color:$Cter;
+        color:black;
         text-align: justify;
         align-items: center;
         margin: 10px;
@@ -39,10 +40,9 @@
 
     @each $act in valvulas,rectificadores,varDF,motElec,compuertas {
         .#{$act} {
-            background-color: $Cppal;
             border-radius: 10px;
             border:solid 2px black;
-            opacity: 0.5;
+            opacity: 1;
             h3{
                 opacity: 1;
             }
@@ -50,14 +50,16 @@
                 opacity:1;
                 h3{
                     opacity: 0;
-                    transition: 1s;
+                    transition: 0.3s;
                 }
                 p{
                     opacity: 1;
                     transition: 1s;
                 }
-                background-color: $Csec;
-                transition:1s;
+                background-image: none;
+                background-color: whitesmoke;
+                transition:2s;
+                transform: scale(1.05);
     
             }
 
@@ -67,6 +69,7 @@
         grid-area:val;
         @include sizes(75%,auto);
         justify-self: center;
+        background-image: url("img/valvula.jpeg");
        
 
     }
@@ -74,15 +77,19 @@
         grid-area:rec;
         @include sizes(90%,75%);
         align-self:center;
-        justify-self: end;        
+        justify-self: end;   
+        background-image: url("img/rectificadores.jpg");     
     }
     .varDF{
-        grid-area:var;        
+        grid-area:var;
+        background-image: url("img/varDF.jpg");        
     }
     .motElec{
-        grid-area:mot;        
+        grid-area:mot;      
+        background-image: url("img/motElec.jpg");  
     }
     .compuertas{
         grid-area:comp;
+        background-image: url("img/compuertas.jpg");
     }
 }

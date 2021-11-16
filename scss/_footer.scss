@@ -3,12 +3,31 @@
     flex-direction: row;
     .ctto{
         flex-basis: 50%;
+        img{
+            background-color:white;
+            border-radius: 30px;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
     }
     .redes{
         flex-basis: 50%;
         nav{
             display: flex;
-            justify-content: right; 
+            justify-content: right;
+                div{
+                    opacity: 0.7;
+                    &:hover{
+                        opacity: 1;
+                        transform: translateY(-10px) scale(1.1);
+                    }
+                
+                }
+
+            }
+
         }
-    }
+    
 }
