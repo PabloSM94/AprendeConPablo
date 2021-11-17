@@ -1,7 +1,7 @@
 @mixin sizes($width,$height){
     height: $height;
     width: $width;
-}
+}/*función creada para definir altos y anchos de bloques*/    
 .gridActuadores{
     display:grid;
     margin-left:2.5%;
@@ -37,7 +37,7 @@
         margin: 10px;
         opacity: 0;
     }
-
+/*definición de propiedades comunes de bloques*/    
     @each $act in valvulas,rectificadores,varDF,motElec,compuertas {
         .#{$act} {
             border-radius: 10px;
@@ -67,7 +67,7 @@
     }
     .valvulas{
         grid-area:val;
-        @include sizes(75%,auto);
+        @include sizes(75%,auto); /*utilización de mixin*/    
         justify-self: center;
         background-image: url("img/valvula.jpeg");
        

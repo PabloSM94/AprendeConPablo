@@ -1,3 +1,4 @@
+/*Definicion de variables*/
 $Cppal:#0b3c5d;
 $Csec:#70a2bd;
 $Cter:#1d2731;
@@ -9,7 +10,7 @@ $Cadc:#d9b310;
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;
     text-align: justify;
-}
+} /*Seteos iniciales de sitio*/ 
 
 
 body{
@@ -28,7 +29,7 @@ body{
         text-align: center;
     }
     .headGrid{
-        height: 79.75px;
+        height: 79.75px;/*Seteos de alto de header para que la Navbar fixed no me tape el sitio*/ 
     }
 }
 
